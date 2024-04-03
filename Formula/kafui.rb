@@ -5,7 +5,7 @@
 class Kafui < Formula
   desc "The k9s inspired terminal ui to quickly browse multiple kafka instances"
   homepage "https://github.com/Benny93/kafui"
-  version "0.1.13-SNAPSHOT-6a847fa"
+  version "0.1.13"
   license "MIT"
 
   on_macos do
