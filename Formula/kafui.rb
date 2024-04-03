@@ -16,7 +16,7 @@ class Kafui < Formula
       def install
         bin.install "kafui"
       end
-    enda
+    end
     if Hardware::CPU.intel?
       url "https://github.com/Benny93/kafui/releases/download/v0.1.13/kafui_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
       sha256 "cc03f2aa664c852f88a4e313669cd1426fc022c06d0305ba3b7167723a05ab14"
