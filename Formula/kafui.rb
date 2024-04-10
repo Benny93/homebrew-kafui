@@ -5,21 +5,21 @@
 class Kafui < Formula
   desc "Terminal ui inspired by k9s to quickly browse multiple kafka instances"
   homepage "https://github.com/Benny93/kafui"
-  version "0.1.25"
+  version "0.1.26"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Benny93/kafui/releases/download/v0.1.25/kafui_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "6f071af6b5bc78604b667e50ee9ea4124699325712bdd10c203f0eb90b28ffc3"
+      url "https://github.com/Benny93/kafui/releases/download/v0.1.26/kafui_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d61c19a6473cde3bd07290574189b9809e6e7c30a0130957f00896bbe560434d"
 
       def install
         bin.install "kafui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Benny93/kafui/releases/download/v0.1.25/kafui_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "597ae834d4c2f4e5e51c4d7175ead7f91859c7dc3efe29b1ad49d3fa2ab6bf5b"
+      url "https://github.com/Benny93/kafui/releases/download/v0.1.26/kafui_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "efaf628d27b60cf050be19cbc848d0f24e72f4ffc8d483c2728a4c23c3f74ed6"
 
       def install
         bin.install "kafui"
@@ -29,16 +29,16 @@ class Kafui < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Benny93/kafui/releases/download/v0.1.25/kafui_linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "d8b0e38c8481db3197ab4030dc186aec46b855324ed2cf60396c38498396ee3e"
+      url "https://github.com/Benny93/kafui/releases/download/v0.1.26/kafui_linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "618965bd233f1f2cd6f30a42703fa5766d53d8a25e89b1868a0171a964291d1f"
 
       def install
         bin.install "kafui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Benny93/kafui/releases/download/v0.1.25/kafui_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1a4758b5790587c0f67c5b620d4bd1bb0acf6265f5494c80199c3aa11de6e081"
+      url "https://github.com/Benny93/kafui/releases/download/v0.1.26/kafui_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "10f60319ae7ab1e9fca852b46dc226f56fe7ff21545e28a315a33c4cc532cb9c"
 
       def install
         bin.install "kafui"
